@@ -17,7 +17,26 @@
     <properties>
         <java.version>14</java.version>
     </properties>
-
+    <!-- jenkins package start -->
+    <scm>
+        <connection>scm:git:http://10.123.1.8/group-gac-dev-tsp/bigdata.git</connection>
+        <url>http://10.123.1.8/group-gac-dev-tsp/bigdata</url>
+        <developerConnection>scm:git:http://10.123.1.8/group-gac-dev-tsp/bigdata.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>releases</name>
+            <url>http://10.123.25.5:8866/nexus/content/repositories/releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>snapshots</name>
+            <url>http://10.123.25.5:8866/nexus/content/repositories/snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <!-- jenkins package end -->
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
